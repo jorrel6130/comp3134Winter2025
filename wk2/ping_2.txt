@@ -1,0 +1,12 @@
+C:\Users\[redacted]>ping 134.122.43.105 -w 5
+
+Pinging 134.122.43.105 with 32 bytes of data:
+Reply from 134.122.43.105: bytes=32 time=16ms TTL=55
+Reply from 134.122.43.105: bytes=32 time=13ms TTL=55
+Reply from 134.122.43.105: bytes=32 time=11ms TTL=55
+Reply from 134.122.43.105: bytes=32 time=13ms TTL=55
+
+Ping statistics for 134.122.43.105:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 11ms, Maximum = 16ms, Average = 13ms

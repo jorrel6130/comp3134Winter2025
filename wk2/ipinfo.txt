@@ -1,0 +1,23 @@
+youtube.com
+IPv4: 142.250.72.206 
+IPv6: 2607:f8b0:4005:80f::200e
+Location: USA
+
+facebook.com
+IPv4: 157.240.22.35
+IPv6: 2a03:2880:f131:83:face:b00c:0:25de
+Location: USA
+
+twitter.com (x.com)
+IPv4: 104.244.42.129
+Location: USA
+
+linkedin.com
+IPv4: 13.107.42.14
+IPv6: 2620:1ec:21::14
+Location: USA
+
+tiktok.com
+IPv4: 23.212.62.197
+IPv4: 23.212.62.216
+Location: USA

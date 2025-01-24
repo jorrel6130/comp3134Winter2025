@@ -1,0 +1,189 @@
+root@comp3134-Winter2025:~# nmap facebook.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-01-24 17:38 UTC
+Nmap scan report for facebook.com (31.13.80.36)
+Host is up (0.0019s latency).
+Other addresses for facebook.com (not scanned): 2a03:2880:f10e:83:face:b00c:0:25de
+rDNS record for 31.13.80.36: edge-star-mini-shv-01-yyz1.facebook.com
+Not shown: 998 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 4.58 seconds
+
+root@comp3134-Winter2025:~# nmap -p 997 facebook.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-01-24 17:48 UTC
+Nmap scan report for facebook.com (31.13.80.36)
+Host is up (0.0021s latency).
+Other addresses for facebook.com (not scanned): 2a03:2880:f10e:83:face:b00c:0:25de
+rDNS record for 31.13.80.36: edge-star-mini-shv-01-yyz1.facebook.com
+
+PORT    STATE    SERVICE
+997/tcp filtered maitrd
+
+Nmap done: 1 IP address (1 host up) scanned in 0.26 seconds
+
+root@comp3134-Winter2025:~# nmap -p 300-400 facebook.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-01-24 17:49 UTC
+Nmap scan report for facebook.com (31.13.80.36)
+Host is up (0.0020s latency).
+Other addresses for facebook.com (not scanned): 2a03:2880:f10e:83:face:b00c:0:25de
+rDNS record for 31.13.80.36: edge-star-mini-shv-01-yyz1.facebook.com
+All 101 scanned ports on facebook.com (31.13.80.36) are filtered
+
+Nmap done: 1 IP address (1 host up) scanned in 3.25 seconds
+
+root@comp3134-Winter2025:~# nmap -F facebook.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-01-24 17:50 UTC
+Nmap scan report for facebook.com (31.13.80.36)
+Host is up (0.0070s latency).
+Other addresses for facebook.com (not scanned): 2a03:2880:f10e:83:face:b00c:0:25de
+rDNS record for 31.13.80.36: edge-star-mini-shv-01-yyz1.facebook.com
+Not shown: 98 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 1.80 seconds
+
+----------------------------------------------------------
+
+root@comp3134-Winter2025:~# nmap twitter.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-01-24 17:38 UTC
+Nmap scan report for twitter.com (104.244.42.193)
+Host is up (0.048s latency).
+Not shown: 998 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 8.21 seconds
+
+root@comp3134-Winter2025:~# nmap -p 79 twitter.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-01-24 17:51 UTC
+Nmap scan report for twitter.com (104.244.42.129)
+Host is up (0.046s latency).
+Other addresses for twitter.com (not scanned): 104.244.42.1 104.244.42.193 104.244.42.65
+
+PORT   STATE    SERVICE
+79/tcp filtered finger
+
+Nmap done: 1 IP address (1 host up) scanned in 11.65 seconds
+
+root@comp3134-Winter2025:~# nmap -p 79 twitter.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-01-24 17:51 UTC
+Nmap scan report for twitter.com (104.244.42.129)
+Host is up (0.046s latency).
+Other addresses for twitter.com (not scanned): 104.244.42.1 104.244.42.193 104.244.42.65
+
+PORT   STATE    SERVICE
+79/tcp filtered finger
+
+Nmap done: 1 IP address (1 host up) scanned in 11.65 seconds
+root@comp3134-Winter2025:~# nmap -p 100-200 twitter.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-01-24 17:51 UTC
+Nmap scan report for twitter.com (104.244.42.65)
+Host is up (0.046s latency).
+All 101 scanned ports on twitter.com (104.244.42.65) are filtered
+
+Nmap done: 1 IP address (1 host up) scanned in 12.25 seconds
+
+root@comp3134-Winter2025:~# nmap -f twitter.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-01-24 17:52 UTC
+Nmap scan report for twitter.com (104.244.42.65)
+Host is up (0.046s latency).
+All 1000 scanned ports on twitter.com (104.244.42.65) are filtered
+
+Nmap done: 1 IP address (1 host up) scanned in 53.43 seconds
+
+----------------------------------------------------------
+
+root@comp3134-Winter2025:~# nmap linkedin.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-01-24 17:42 UTC
+Nmap scan report for linkedin.com (13.107.42.14)
+Host is up (0.0024s latency).
+Other addresses for linkedin.com (not scanned): 2620:1ec:21::14
+Not shown: 997 filtered ports
+PORT    STATE  SERVICE
+53/tcp  closed domain
+80/tcp  open   http
+443/tcp open   https
+
+Nmap done: 1 IP address (1 host up) scanned in 7.44 seconds
+
+root@comp3134-Winter2025:~# nmap -p 586 linkedin.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-01-24 17:58 UTC
+Nmap scan report for linkedin.com (13.107.42.14)
+Host is up (0.0025s latency).
+Other addresses for linkedin.com (not scanned): 2620:1ec:21::14
+
+PORT    STATE    SERVICE
+586/tcp filtered password-chg
+
+Nmap done: 1 IP address (1 host up) scanned in 0.31 seconds
+
+root@comp3134-Winter2025:~# nmap -p 800-900 linkedin.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-01-24 17:59 UTC
+Nmap scan report for linkedin.com (13.107.42.14)
+Host is up (0.0022s latency).
+Other addresses for linkedin.com (not scanned): 2620:1ec:21::14
+All 101 scanned ports on linkedin.com (13.107.42.14) are filtered
+
+Nmap done: 1 IP address (1 host up) scanned in 3.26 seconds
+
+root@comp3134-Winter2025:~# nmap -f linkedin.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-01-24 17:59 UTC
+Nmap scan report for linkedin.com (13.107.42.14)
+Host is up (0.0022s latency).
+Other addresses for linkedin.com (not scanned): 2620:1ec:21::14
+All 1000 scanned ports on linkedin.com (13.107.42.14) are filtered
+
+Nmap done: 1 IP address (1 host up) scanned in 21.14 seconds
+
+----------------------------------------------------------
+
+root@comp3134-Winter2025:~# nmap tiktok.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-01-24 17:43 UTC
+Nmap scan report for tiktok.com (23.222.17.70)
+Host is up (0.0019s latency).
+Other addresses for tiktok.com (not scanned): 23.222.17.76 23.222.17.71
+rDNS record for 23.222.17.70: a23-222-17-70.deploy.static.akamaitechnologies.com
+Not shown: 997 filtered ports
+PORT    STATE  SERVICE
+53/tcp  closed domain
+80/tcp  open   http
+443/tcp open   https
+
+Nmap done: 1 IP address (1 host up) scanned in 4.48 seconds
+
+root@comp3134-Winter2025:~# nmap -p 1 tiktok.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-01-24 18:00 UTC
+Nmap scan report for tiktok.com (23.47.72.18)
+Host is up (0.013s latency).
+Other addresses for tiktok.com (not scanned): 23.47.72.19
+rDNS record for 23.47.72.18: a23-47-72-18.deploy.static.akamaitechnologies.com
+
+PORT  STATE    SERVICE
+1/tcp filtered tcpmux
+
+Nmap done: 1 IP address (1 host up) scanned in 0.27 seconds
+
+root@comp3134-Winter2025:~# nmap -p 200-400 tiktok.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-01-24 18:00 UTC
+Nmap scan report for tiktok.com (23.47.72.18)
+Host is up (0.013s latency).
+Other addresses for tiktok.com (not scanned): 23.47.72.19
+rDNS record for 23.47.72.18: a23-47-72-18.deploy.static.akamaitechnologies.com
+All 201 scanned ports on tiktok.com (23.47.72.18) are filtered
+
+Nmap done: 1 IP address (1 host up) scanned in 2.00 seconds
+
+root@comp3134-Winter2025:~# nmap -f tiktok.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-01-24 18:01 UTC
+Nmap scan report for tiktok.com (23.47.72.18)
+Host is up (0.013s latency).
+Other addresses for tiktok.com (not scanned): 23.47.72.19
+rDNS record for 23.47.72.18: a23-47-72-18.deploy.static.akamaitechnologies.com
+All 1000 scanned ports on tiktok.com (23.47.72.18) are filtered
+
+Nmap done: 1 IP address (1 host up) scanned in 21.13 seconds
